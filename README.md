@@ -17,6 +17,9 @@ dqtorch is a pytorch libarary for fast batched (dual) quaternion operations. The
 - supports all ``torch.half``, ``torch.float``, ``torch.double`` tensors.
 - supports gradient of a gradient.
 
+to do:
+- [ ] dual quaternion blend skinning.
+
 ## Get Started
 ### Requirments
 tested in Pytorch 1.12, CUDA-11.1, gcc-6.3.0.
