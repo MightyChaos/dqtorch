@@ -93,7 +93,7 @@ qr3, t3 = dqtorch.dual_quaternion_to_quaternion_translation(dq1)
 print((qr3-qr1).abs().max(), (t3-t1).abs().max()) # should be close to 0
 ```
 
-## Related Projects.
+## Related Projects
 
 dqtorch has been used in in our research  of deformable NeRF:
 - [RAC: Reconstructing Animatable Categories from Videos](https://gengshan-y.github.io/rac-www/)
