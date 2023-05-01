@@ -1,0 +1,29 @@
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore environment files
+.env
+venv/
+env/
+pip-lockfile.txt
+pipfile.lock
+
+# Ignore package build files
+dist/
+build/
+*.egg-info/
+
+# Ignore local development configuration files
+config/settings_local.py
+config/*.ini
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
