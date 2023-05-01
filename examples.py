@@ -9,7 +9,7 @@ qr2 = dqtorch.axis_angle_to_quaternion(torch.randn(n_pts, 3).cuda())
 
 # quaternion multiplication
 qr3 = dqtorch.quaternion_mul(qr1, qr2)
-# if the channel is 3, we assume the quaternion real part is 0
+# if the number of channels is 3, we assume the quaternion real part is 0
 qr4 = dqtorch.quaternion_mul(qr1, qr2[..., 1:])
 
 # apply rotation to 3d points
