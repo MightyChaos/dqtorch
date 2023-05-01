@@ -32,7 +32,7 @@ elif os.name == "nt":
 LIB_NAME = 'dqtorch'
 setup(
     name=LIB_NAME, # package name, import this to use python API
-    description='A faster pytorch libraray for (dual) quaternion batch operations.',
+    description='A faster pytorch libraray for (dual) quaternion batched operations.',
     license="MIT",
     author="Chaoyang Wang",
     python_requires=">=3.6",
