@@ -13,7 +13,7 @@ dqtorch is a pytorch libarary for fast batched (dual) quaternion operations. The
 
 ## Key Features
 - fast CUDA implementation for quaternion operations.
-- basic operations for so(3) and s3(3) transformation using (dual) quaternions.
+- basic operations for SO(3) and SE3(3) transformation using (dual) quaternions.
 - supports all ``torch.half``, ``torch.float``, ``torch.double`` tensors.
 - supports gradient of a gradient.
 
@@ -93,6 +93,11 @@ qr3, t3 = dqtorch.dual_quaternion_to_quaternion_translation(dq1)
 print((qr3-qr1).abs().max(), (t3-t1).abs().max()) # should be close to 0
 ```
 
+## Related Projects.
+
+dqtorch has been used in in our research  of deformable NeRF:
+- [RAC: Reconstructing Animatable Categories from Videos](https://gengshan-y.github.io/rac-www/)
+- [Flow Supervison for Deformable NeRF] (https://mightychaos.github.io/projects/fsdnerf/index.html)
 
 
 
